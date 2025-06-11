@@ -1,0 +1,32 @@
+body{
+    font-family: verdana;
+}
+p {
+    font-family: Times New Roman;
+    font-size:20px;
+    text-align: center;
+}
+.light-theme{
+    bg: var
+}
+.card {
+    background-color: rgba(131, 236, 145, 0.393);
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.9);
+   
+  }
+  table {
+    border-collapse: collapse;
+    width:100%;
+  } 
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(232, 184, 232);
+  }
+  th {
+    background-color: rgb(249, 175, 249);
+  }
