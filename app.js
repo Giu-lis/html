@@ -1,16 +1,59 @@
-'use strict'
-const switcher = document.querySelector('.btn');
+document.addEventListener("DOMContentLoaded", () => { 
+    const carousel = document.querySelector(".carousel");
+    const items = document.querySelectorAll(".carousel-item");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const dotsContainer = document.querySelector(".carousel-dots");
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme')
+    let currentIndex = 0;
 
-    var className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "Dark";
+    items.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(index));
+        dotsContainer.appendChild(dot); // Corrigido aqui
+    });
+
+    const dots = document.querySelectorAll(".dot");
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`; // Corrigido aqui
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex); // Corrigido aqui
+        });
     }
-    else {
-        this.textContent = "Light";
+
+    function goToSlide(index) {
+        currentIndex = index;
+        updateCarousel();
     }
 
-    console.log('current class name: ' + className);
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+    }
+
+    nextBtn.addEventListener("click", nextSlide); // Corrigido aqui
+    prevBtn.addEventListener("click", prevSlide);
+
+    setInterval(nextSlide, 5000);
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carousel.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX; // Corrigido aqui
+        if (touchStartX - touchEndX > 50) nextSlide();
+        if (touchStartX - touchEndX < -50) prevSlide();
+    });
 });
