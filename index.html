@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog da giu</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-image: url(imagemfundo.png);
-background-size: cover;
-background-position: center;">
+<body style="background-image: url(imagemfundo.jpg); background-size: cover; background-position: center;">
 <div class="card">
     <h1>O ballet e a moda: A Dança Perfeita</h1>
-    <img src="imagemcapa.webp" width="600" height="300">
+    <img src="imagemcapa.jpg" width="600" height="300">
     <h2>Como começou?</h2>
-    <p>O ballet surgiu nas cortes renascentistas do século XV. Considerado uma dança luxuosa, apresentada em eventos importantes ou para nobres como forma de lazer.
+    <p style="text-align: justify; margin-left: 400px; margin-right: 400px;">O ballet surgiu nas cortes renascentistas do século XV. Considerado uma dança luxuosa, apresentada em eventos importantes ou para nobres como forma de lazer.
         O figurino que conhecemos hoje como o tutu, saias volumosas e colant, surgiu no século XIX durante o romantismo.
         O balletcore é como se chama a estética e estilo que se inspira nessa dança tão antiga.
     </p>
-    <h2>Figurino do século XV</h2>
-    <img src="imagemxv.jpg" width="700" height="400">
+    <h2>Balletcore</h2>
+    <img src="imagemmeio.jpg" width="700" height="400">
     <h2>Hoje em dia: Balletcore</h2>
-    <p>Com tanta influência durantes os séculos, o ballet ainda é uma inspiração nos dias atuais. Foi dele que surgiu o 'Balletcore', tendência que inclue inspirações dos figurinos nos estilos modernos.
+    <p style="text-align: justify; margin-left: 400px; margin-right: 400px;">Com tanta influência durantes os séculos, o ballet ainda é uma inspiração nos dias atuais. Foi dele que surgiu o 'Balletcore', tendência que inclue inspirações dos figurinos nos estilos modernos.
         Marcado principalmente pelas meias calças, sapatilhas, saias e polainas, composições básicas em um look de uma bailarina. E não para por aí! Coques, rendas e fitas estão inclusos no pacote para se ajustar ao ar de feminilidade e delicadeza do estilo.
     </p>
 
@@ -48,14 +46,14 @@ background-position: center;">
             <tr>
                 <td>3º Traje</td>
                 <td>Século XVIII</td>
-                <td>Utilizavam máscaras, as saias foram encurtadas para que o movimento das pernas ficasse evidentes, o salto foi retirado, as anáguas e saias rodadas sairam de jogo para serem substituidas por túnicas justas inspiradas nos gregos e a meia calça surgiu.
+                <td>Utilizavam máscaras, as saias foram encurtadas para que o movimento das pernas ficasse evidentes, o salto foi retirado, as anáguas e saias rodadas saíram de jogo para serem substituidas por túnicas justas inspiradas nos gregos e a meia calça surgiu.
                     Os homens utilizavam gibões e calções de acordo com a moda da época.
                 </td>
             </tr>
             <tr>
                 <td>Tutu romântico e tutu clássico</td>
                 <td>Século XIX</td>
-                <td>No começo o tutu romântico surgiu, uma saia com varias camadas que chegava até a metade da panturrilha e gradualmente foi encurtando. Logo o tutu classíco veio, era mais rigído e ficava acima do joelho. No lanççameto do lago dos cisneis a saia encurtou mais ainda e era presa com arcos e 10 camadas de rede.</td>
+                <td>No começo o tutu romântico surgiu, uma saia com varias camadas que chegava até a metade da panturrilha e gradualmente foi encurtando. Logo o tutu classíco veio, era mais rigído e ficava acima do joelho. No lançameto do lago dos cisneis a saia encurtou mais ainda e era presa com arcos e 10 camadas de rede.</td>
             </tr>
             <tr>
                 <td>Estilo oriental</td>
@@ -66,12 +64,23 @@ background-position: center;">
     </table>
     <p>Se quiser saber mais e começar a segui esse estilo com tanta história, acesse: </p>
     <a href="https://www.youtube.com/watch?v=By-BH6idTlQ" target="_blank">Balletcore está de volta: o guia definitivo para esta tendência suave e elegante</a>
-
-
-
-
-
-
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="imagem1.jpg" alt="Imagem 1">
+            </div>
+            <div class ="carousel-item">
+                <img src="imagem2.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagem3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-button prev"> ⮜ </button>
+        <button class="carousel-button next"> ⮞ </button>
+        <div class="carousel-dots"></div>
+    </section>
 </div>    
 </body>
+<script src="app.js"></script>
 </html>
