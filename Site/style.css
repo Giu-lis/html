@@ -1,0 +1,15 @@
+.titulo{
+    font-family: Georgia;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    position:relative;
+    margin-top: 130px;
+}
+.card {
+    max-width: 45%;
+    background-color: rgb(251, 227, 252);
+    margin-top: 170px;
+    margin-right: 20px;
+    text-align: left;
+}
