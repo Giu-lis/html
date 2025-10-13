@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="corpo">
+        <h1>Conversor de Moedas</h1>
+        <form id = 'formulario'>
+            <div class="depre">
+                <h2>Quantia:</h2>
+                <div class="arruma">
+                    <input type="number" id="valor1" name="'valor1" placeholder="Insira um valor" required>
+                </div>
+            </div>
+            <div class="depre">
+                <h2>De:</h2>
+                <div class="arruma">
+                    <select id="tenho" name="tenho" class="seletor1" required>
+                         <option value="" disabled selected>Selecione a moeda</option>
+                         <option value="real">Real</option>
+                         <option value="dolar">Dólar</option>
+                         <option value="euro">Euro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="depre">
+                 <h2>Para:</h2>
+                <div class="arruma">
+                <select id="quero" name="quero" class="seletor2" required>
+                    <option value="" disabled selected>Selecione a moeda</option>
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </div>
+                </div>
+                <script src="js/script.js"></script>
+                <div class="botao">
+                    <button type="submit">Converter</button>
+                </div>
+                <div class="mostra">
+                <div id="erro"></div>
+                <div id="resultado"></div>     
+                </div>
+        </form>
+    </div>
+</body>
+</html>
