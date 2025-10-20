@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP - API</title>
+    <link rel="stylesheet" href="css/cep.css">
+</head>
+<body>
+    <div class="cep">
+    <label class="h1">CEP:
+        <form method="get" action=".">
+            <input name="cep" type="next" id="cep" value=" " size="10" maxlength="9"
+            onblur="pesquisacep(this.value);"/>
+        </form>
+    </label>
+    <label>Logradouro:
+        <input name="logradouro" type="text" id="logradouro" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Complemento:
+        <input name="complemento" type="text" id="complemento" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Unidade:
+        <input name="unidade" type="text" id="unidade" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Bairro:
+        <input name="bairro" type="text" id="bairro" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Localidade:
+        <input name="localidade" type="text" id="localidade" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Uf:
+        <input name="uf" type="text" id="uf" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Estado:
+        <input name="estado" type="text" id="estado" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Região:
+        <input name="regiao" type="text" id="regiao" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>IBGE:
+        <input name="ibge" type="text" id="ibge" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Gia:
+        <input name="gia" type="text" id="gia" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Ddd:
+        <input name="ddd" type="text" id="ddd" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <label>Siafi:
+        <input name="siafi" type="text" id="siafi" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);"/>
+    </label>
+    <div ontouchstart="">
+        <div class="button">
+    <a href="#">Pesquisar</a>
+        </div>
+    </div>
+    </div>
+    <script src="js/cep.js"></script>
+</body>
+</html>
