@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+body{
+    background: radial-gradient(circle, rgb(249, 227, 255) 0%,rgba(245, 201, 208, 1) 100%);
+}
+
+ h1{
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 90px;
+}
+
+p {
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+  margin-top: -40px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.foto {
+    display: flex;
+    height: 600px;
+    margin-top: 40px;
+    padding-left: 35%;
+    padding-right: 40%;
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(141, 170, 141);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    width: 200%;
+    
+}
+
+.botao{
+  display: flex;
+  padding-top: 10%;
+}
+
+.next  {
+    display: flex;
+    padding-left: 78%;
+    
+}
+
+.back {
+    display: flex;
+    padding-left: 2%;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease
+}
+a {
+    text-decoration: none;
+    color: black;
+}

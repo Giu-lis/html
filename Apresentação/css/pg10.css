@@ -1,0 +1,133 @@
+body{
+    background: #f5c9d0;
+    background: radial-gradient(circle,rgb(255, 248, 227, 1) 20%, rgba(158, 128, 255, 0.773) 90%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+ h1{
+  font-family: "Gideon Roman", serif;
+  font-style: normal;
+  text-align: left;
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-left: 23px;
+}
+button {
+    border-radius: 20px;
+    background-color: rgb(141, 170, 141);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    width: 200%;
+    
+}
+.botao{
+  display: flex;
+  padding-top: 5%;
+}
+
+.next  {
+    display: flex;
+    padding-left: 78%;
+    
+}
+
+.back {
+    display: flex;
+    padding-left: 2%;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease
+}
+p {
+    padding-top: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400px;
+}
+.text1{
+    margin-top: 70px;
+    margin-right: 60%;
+    margin-left: 23px;
+}
+.tagimagem{
+    width: 7%;
+    margin-top: 3%;
+    height: 7%;
+}
+.parte1{
+    display: flex;
+}
+.tag{
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+.hashtag{
+    width: 85px;
+    margin-top: 4%;
+    height: 85px;
+}
+.parte2{
+    display: flex;
+}
+.text2{
+    margin-top: 110px;
+    margin-left: 70px;
+    margin-right: 60%;
+}
+.ID{
+    width: 17%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.igual{
+    width: 80px;
+    height: 80px;
+    margin-left: 55%;
+    margin-top: -47%;
+}
+.parte3{
+    display: flex;
+}
+.text3{
+    margin-top: -46%;
+    margin-left: 2%;
+    margin-right: -25%;
+}
+.classe{
+    width: 20%;
+    margin-top: -40%;
+    height: 20%;
+    margin-right: 15%;
+}
+.asterisco1{
+    width: 4%;
+    margin-left: 56%;
+    height: 4%;
+    margin-top: -325px;
+}
+.parte4{
+    display: flex;
+}
+.text4{
+    margin-top: -310px;
+    margin-left: 2%;
+    margin-right: -25%;
+}
+.asterisco{
+    width: 30%;
+    height: 30%;
+    margin-right: 104px;
+    margin-top: -10%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

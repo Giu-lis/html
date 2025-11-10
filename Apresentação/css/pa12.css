@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+h1{
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 120px;
+  font-weight: lighter;
+  margin-left: 4%;
+  margin-top: 50px;
+  margin-bottom: -60px;
+}
+
+body{
+    background: #f5c9d0;
+    background: radial-gradient(circle,rgb(201, 219, 245) 0%, rgba(255, 248, 227, 1) 100%);
+}
+
+img {
+    margin-left: 700px;
+    margin-top: -40px;
+}
+
+.botao{
+  display: flex;
+  padding-top: 10%;
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(141, 170, 141);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    width: 200%;
+}
+
+.next  {
+    display: flex;
+    padding-left: 78%;
+    
+}
+
+.back {
+    display: flex;
+    padding-left: 2%;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease
+}
+a {
+    text-decoration: none;
+    color: black;
+}
