@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .logo{
     display: flex;
@@ -99,36 +103,42 @@ a{
     margin-left: 30px;
 }
 .meta{
-    width: 180px;
+    width: 200px;
+    height: 296px;
+    margin-left: -29px;
 }
 .um{
-    display: flex;
     border-radius: 5px;
+    column-count: 2;
+    
 }
  .um p{
     display: flex;
     font-size: 20px;
     font-weight: lighter;
-    margin-left: 9px;
-    position: column;
-    line-height: 2.0;
-    padding-right: 35%;
+    line-height: 3.0;
+    padding-right: 30%;
+    margin-top: -10px;
+    margin-left: -80px;
+
 }
 .prince{
     width: 180px;
     height: 290px;
+    margin-bottom: 83.8%;
 }
 .dois p{
     display: flex;
     font-size: 20px;
     font-weight: lighter;
-    line-height: 2.0;
-    margin-left: -120px;
-    padding-right: 50%;
+    line-height: 2.5;
+    margin-left: -100px;
+    padding-right: 45%;
 }
 
 .dois{
     column-count: 2;
+    margin-left: -10%;
 }
 
 .tres img {
@@ -138,14 +148,16 @@ a{
 
 .tres {
     column-count: 2;
+    margin-left: -10%;
+    width: 500px;
+    height: 300px;
 }
 
 .tres p {
     font-size: 20px;
     font-weight: lighter;
-    margin-left: 9px;
-    line-height: 1.0;
-    margin-left: -120px;
+    line-height: 2.5;
+    margin-left: -65px;
 }
 
 .alta {
@@ -154,20 +166,19 @@ a{
   column-fill: balance;
   column-fill: auto;
   column-fill: balance;
-
-}
-.noites{
-    width: 200px;
-}
-.quatro p {
-    font-size: 20px;
-    font-weight: lighter;
-    margin-left: 9px;
-    line-height: 1.0;
-    margin-left: -110px;
+  padding-left: 10%;
+  margin-top: 100px;
 }
 
-.quatro {
-    column-count: 2;
-    padding-top: 30px;
+.um:hover, .dois:hover, .tres:hover, .quatro:hover {
+    cursor: pointer;
+    transform: scale(1.01);
 }
+
+
+footer{
+    padding : 1.5rem  2rem ; 
+    background-color : #95b69086 ; 
+    color : #fff ; 
+}
+
