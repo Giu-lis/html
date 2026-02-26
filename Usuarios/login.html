@@ -26,7 +26,7 @@
         background-color: rgb(255, 174, 243);
         margin-top: 35vh;
         width: 60vh;
-        height: 25vh;
+        height: 30vh;
         margin-left: 70vh;
         align-items: center;
         border-radius: 10px;
@@ -64,6 +64,11 @@
         border-color: rgb(166, 207, 142);
     }
     
+    .aaaaa{
+        
+        margin-left: 180px;
+        margin-top: 10px;
+    }
 
 </style>
 
@@ -71,22 +76,30 @@
 <body>
 
     <div class="caixona">
+        <form id="loginForm">
 
         <h2>Login</h2>
 
         
         <label>Email</label>
-        <input type="email" id="email" required />
+        <input type="text" id="email" required />
         
 
         
         <label>Senha</label>
-        <input type="senha" id="senha" required />
+        <input type="password" id="senha" required />
         
         
         <button class="botao" type="submit">Entrar</button>
+        
+        <div class="aaaaa">
+            <a href="index.html">Não possui cadastro?Cadastrar</a>
+        </div>
+       
+        </form>
 
         <script src="login.js"></script>
+
 
     </div>
 

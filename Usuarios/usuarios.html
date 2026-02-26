@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body {
+            background-image: url(356b051fa738b6ba691c247372033b32.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: #f3f4f6;
             margin: 0;
             padding: 30px;
         }
@@ -16,10 +22,13 @@
         .container {
             max-width: 1000px;
             margin: auto;
-            background: white;
+            background: #f833bdb6;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 200px;
+            border: 2px solid;
+            border-color: #7c0057;
         }
 
         h2 {
@@ -36,7 +45,7 @@
 
         .novo {
             padding: 10px 16px;
-            background: #4f46e5;
+            background: #7bda00e3;
             color: white;
             border: none;
             border-radius: 8px;
@@ -45,7 +54,7 @@
         }
 
         .novo:hover {
-            background: #4338ca;
+            background: #7cda00;
         }
 
         table {
@@ -62,7 +71,7 @@
         }
 
         th {
-            background: #4f46e5;
+            background: #7bda00e3;
             color: white;
         }
 
@@ -79,7 +88,7 @@
         }
 
         .editar {
-            background: #f59e0b;
+            background: #c42fe2;
             color: white;
         }
 
@@ -94,9 +103,41 @@
             text-align: center;
         }
 
-        .erro { color: #dc2626; }
+        .erro { color: #fa6a6a; }
+
+        header{
+            padding-top: 10px;
+            text-align: center;
+            height: 95px;
+            margin-top: -29.7px;
+            margin-left: -29.6px;
+            width: 1920px;
+            background-color: #f833bdb6;
+        }
+        tbody{
+            background-color: #e5e7eb;
+        }
+        .beta{
+           background-color: #7cda00;
+           width: 90px;
+           height: 30px;
+           margin-left: 185vh;
+        }
     </style>
 </head>
+
+<header>
+
+    <h1>Sistema de Usuário</h1>
+
+
+
+    <div class="botao">
+    <button class="beta" id="logout-button">Sair</button>
+    </div>
+
+</header>
+
 <body>
 
 <div class="container">
@@ -193,6 +234,15 @@ function deletar(id) {
 }
 
 carregarUsuarios();
+
+ document.getElementById('logout-button').addEventListener('click', )
+
+//botao sair
+function logout() {
+    localStorage.removeItem('usuarioLogado');
+    window.location.href = 'login.html';
+}
+
 </script>
 
 </body>

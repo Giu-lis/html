@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const senha = document.getElementById("senha").value;
     const errorMsg = document.getElementById("errorMsg");
 
-    errorMsg.textContent = "";
+    
 
     fetch("http://localhost:8080/usuarios/login", {
         method: "POST",
